@@ -17,9 +17,9 @@ def polyfit(x, y, degree):
 
     # r-squared
     yhat = func(x ,popt[0] ,popt[1],popt[2],popt[3] )                         # or [p(z) for z in x]
-    ybar = numpy.sum(y)/len(y)          # or sum(y)/len(y)
-    ssreg = numpy.sum((yhat-ybar)**2)   # or sum([ (yihat - ybar)**2 for yihat in yhat])
-    sstot = numpy.sum((y - ybar)**2)    # or sum([ (yi - ybar)**2 for yi in y])
+    ybar = np.sum(y)/len(y)          # or sum(y)/len(y)
+    ssreg = np.sum((yhat-ybar)**2)   # or sum([ (yihat - ybar)**2 for yihat in yhat])
+    sstot = np.sum((y - ybar)**2)    # or sum([ (yi - ybar)**2 for yi in y])
     results['determination'] = ssreg / sstot
 
     return results
