@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 
-N=5
 k=[0,0,0]
 a=[0,0,0]
 b=[0,0,0]
