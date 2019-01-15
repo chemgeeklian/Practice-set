@@ -52,8 +52,9 @@ for i in range(np.size(dataset,axis=0)):
     dataset[i]=pertub(dataset[i])
 #############################################################################
 
-new_base,test=PCA(dataset,np.size(dataset,axis=0),2)
+new_base,test=PCA(np.array([[2,-1,1],[-1,5,0],[1,0,3]]),3,3)#(dataset,np.size(dataset,axis=0),2)
 
+'''
 #Plot the 3D figure begore PCA
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -71,4 +72,4 @@ ax.set_zlabel('Z Label')
 plt.show()
 
 #plot the 2D figure after PCA
-plot1=plt.plot(test[0],test[1],'o',c='r')
+plot1=plt.plot(test[0],test[1],'o',c='r')'''
