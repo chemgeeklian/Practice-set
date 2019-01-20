@@ -63,10 +63,8 @@ for i in range(parameter.max_iter):
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-for i, m in [(0,'r'),(1,'y'),(2,'g'),(3,'b')]:
-    ax.scatter(df.loc[np.where(df['label']==i)]['x'], 
-                      df.loc[np.where(df['label']==i)]['y'], c=m)
-ax.scatter(kmean.loc[:,'x'], kmean.loc[:,'y'], c='black')
+for i, m in [(0,'r'),(1,'y')]:
+    ax.scatter(a[np.where(a[:,2]==i),0], a[np.where(a[:,2]==i),1], c=m)
 ax.set_xlabel('X Label')
 ax.set_ylabel('Y Label')
 plt.show() #visualize clustering results.
