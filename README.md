@@ -1,1 +1,2 @@
-﻿This is a repository of my coding practice, including some trials.
+﻿ I made this repository to record my coding practice, mainly written in Python.
+  
